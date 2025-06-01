@@ -236,3 +236,164 @@ margin-bottom: 40px;
     display: none;
   }
 }
+/* Why You'll Love It */
+.love-title{
+    margin-bottom: 40px;
+}
+.love-subtitle{
+    margin-bottom: 24px;
+}
+.love-img{
+    margin-bottom: 16px;
+}
+.love-text{
+    margin-bottom: 16px;
+    text-align: left;
+}
+.love-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.love-item{
+    border: 1px solid #29a2ff;
+        padding: 8px 12px;
+        height: 37px;
+        width: 180px;
+        text-align: left;
+}
+.love-item-one{
+    width: 210px;
+}
+.love-item-two{
+    width: 270px;
+}
+.love-item-four{
+width: 260px;
+}
+@media only screen and (min-width: 1439px) {
+  .love-title{
+    margin-bottom: 56px;
+  }
+  .love-subtitle{
+    margin-bottom: 0;
+  }
+  .mob{
+    display: none;
+  }
+  .love-img{
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: -50px;
+  }
+  .love-text{
+    width: 630px;
+    margin-top: -350px;
+    margin-bottom: 24px;
+  }
+  .love-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+    gap: 24px;
+  }
+  .love-item{
+    font-weight: 400;
+        font-size: 18px;
+        width: 220px;
+        height: 59px;
+        padding: 16px;
+  }
+  .love-item-one{
+    width: 262px;
+  }
+  .love-item-two{
+    width: 341px;
+  }
+  .love-item-four{
+    width: 330px;
+  }
+}
+/* Puzzle Difficulty Curve */
+.curve-title{
+    margin-bottom: 40px;
+}
+.curve-subtitle{
+    margin-bottom: 24px;
+}
+.curve-img-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.curve-text{
+    text-align: left;
+}
+@media only screen and (min-width: 1439px) {
+  .curve-title{
+    margin-bottom: 56px;
+  }
+  .curve-subtitle{
+    margin-bottom: 32px;
+  }
+.curve-img-container{
+flex-direction: row;
+gap: 24px;
+margin-bottom: 24px;
+}
+.curve-text{
+    width: 636px;
+}
+}
+/* Visual Experience */
+.visual-title{
+    margin-bottom: 40px;
+}
+.visual-subtitle{
+    margin-bottom: 24px;
+}
+.visual-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.visual-item{
+    border: 1px solid #29a2ff;
+        padding: 12px 16px;
+        width: 343px;
+        height: 72px;
+}
+.visual-item-text{
+    font-size: 16px;
+    height: 48px;
+}
+.visual-item-text-up{
+    margin-top: 10px;
+}
+@media only screen and (min-width: 1439px) {
+ .visual-title{
+    margin-bottom: 56px;
+ }
+ .visual-subtitle{
+    margin-bottom: 32px;
+ }
+ .visual-list{
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: nowrap;
+ }
+ .visual-item{
+    border: 1px solid #29a2ff;
+        padding: 16px 24px;
+        width: 306px;
+        height: 113px;
+ }
+ .visual-item-text{
+    font-size: 18px;
+    height: 81px;
+ }
+ .up-desk{
+    margin-top: 10px;
+ }
+}
