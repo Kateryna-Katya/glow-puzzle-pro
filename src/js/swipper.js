@@ -44,11 +44,11 @@ function initSwipers() {
         on: {
           init: function () {
             updatePagination(config.paginationItemSelector, this.realIndex);
-            initFaqAccordion(this);
+            if (id === '.faq-swiper') initFaqAccordion(this);
           },
           slideChange: function () {
             updatePagination(config.paginationItemSelector, this.realIndex);
-            initFaqAccordion(this);
+            if (id === '.faq-swiper') initFaqAccordion(this);
           },
         },
       });
@@ -62,6 +62,11 @@ function initSwipers() {
         });
       });
     } else {
+      // Swiper не використовується на великих екранах
+      if (id === '.faq-swiper') {
+        initStaticAccordions();
+      }
+
       if (swiperInstances[id]) {
         swiperInstances[id].destroy(true, true);
         delete swiperInstances[id];
@@ -84,17 +89,25 @@ function clearPagination(paginationSelector) {
 }
 
 // ========================
-// Accordion for FAQ Swiper
+// Accordion for Swiper slides
 // ========================
-
 function initFaqAccordion(swiperInstance) {
   const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
   if (!activeSlide) return;
 
   const triggers = activeSlide.querySelectorAll('.faq-acc-el-trigger');
-
   triggers.forEach(trigger => {
-    // remove old listener to avoid duplicates
+    trigger.removeEventListener('click', handleAccordionClick);
+    trigger.addEventListener('click', handleAccordionClick);
+  });
+}
+
+// ========================
+// Accordion for Static (non-swiper) layout
+// ========================
+function initStaticAccordions() {
+  const triggers = document.querySelectorAll('.faq-swiper .faq-acc-el-trigger');
+  triggers.forEach(trigger => {
     trigger.removeEventListener('click', handleAccordionClick);
     trigger.addEventListener('click', handleAccordionClick);
   });
