@@ -10,12 +10,11 @@
     width: 100%;
     z-index: 1003;
 }
-
 .header-container {
-    padding: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+padding: 18px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .header-link{
 cursor: pointer;
@@ -57,76 +56,51 @@ font-weight: 500;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 160px 40px;
+    padding: 16px;
     transition: visibility 0.3s ease;
 }
 
 .menu-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-    gap: 22px;
-    width: 160px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: end;
+    text-align: right;
+    gap: 12px;
+    margin-top: 32px;
 }
 
 .menu-list-item {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: #fff;
-    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
-    cursor: pointer;
-}
-
-.menu-list-item:hover,
-.menu-list-item:active {
-    border-radius: 50px;
-    padding: 4px 10px;
-    background-color: #fff;
-    color: #232323;
+    font-size: 18px;
+     cursor: pointer;
 }
 
 @media screen and (min-width: 1440px) {
-    .header {
-        height: 68px;
-
-    }
-
-    .header-container {
-        padding: 14px 108px;
-        gap: 220px;
-        justify-content: flex-start;
-    }
-
-    .menu-button {
-        display: none;
-    }
-
-    .navigation-list {
-        display: flex;
-        gap: 36px;
-    }
-
-    .navigation-item {
-        font-family: "Raleway", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.5;
-        text-transform: uppercase;
-        color: #fff;
-        transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
-        cursor: pointer;
-    }
-
-    .navigation-item:hover,
-    .navigation-item:active {
-        border-radius: 50px;
-        padding: 4px 10px;
-        background-color: #fff;
-        color: #232323;
-    } }
+.header {
+height: 88px;
+}
+.header-container {
+padding: 24px 72px;
+}
+ .header-link {
+cursor: pointer;
+display: flex;
+align-items: center;
+ gap: 12px;
+ }    
+ .logo-text {
+font-weight: 500;
+font-size: 18px; 
+ }
+ .menu-button {
+display: none;
+}
+.navigation-list {
+display: flex;
+gap: 16px;
+}
+.navigation-item {
+font-weight: 500;
+font-size: 18px;
+cursor: pointer;
+}
+}

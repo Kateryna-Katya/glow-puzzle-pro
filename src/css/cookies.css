@@ -1,0 +1,72 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+
+.background-policy {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cookies-title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    text-shadow: none;
+}
+
+.text-span {
+    font-weight: 500;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+    font-style: normal;
+    font-size: 18px;
+    color: #e0fafe;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.mail-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+@media only screen and (min-width: 1439px) {
+    .background-policy {
+        font-size: 24px;
+    }
+
+    .cookies-title {
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 56px;
+    }
+
+    .policy-subtitle {
+        font-size: 32px;
+    }
+}
