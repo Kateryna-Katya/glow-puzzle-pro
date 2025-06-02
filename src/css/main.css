@@ -646,3 +646,59 @@ width: 620px;
     display: none;
  }
 }
+/* Contact & Support */
+.contact-title{
+    margin-bottom: 40px;
+}
+.contact-subtitle{
+    margin-bottom: 24px;
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    text-align: left;
+}
+.contact-item{
+    display: flex;
+    gap: 12px;
+}
+.contact-text{
+    color: #fec311;
+}
+.contact-link-wrapper{
+    display: flex;
+    gap: 16px;
+}
+.contact-img{
+    width: 24px;
+    height: 24px;
+}
+.contact-icon{
+    cursor: pointer;
+}
+.contact-link{
+    cursor: pointer;
+}
+.contact-container {
+    padding-bottom: 80px;
+}
+@media only screen and (min-width: 1439px) {
+  .contact-title{
+    margin-bottom: 56px;
+  }
+  .contact-subtitle{
+    margin-bottom: 32px;
+  }
+  .contact-list{
+    gap: 16px;
+  }
+  .contact-img{
+    width: 32px;
+    height: 32px;
+  }
+  .contact-container{
+    padding-bottom: 190px;
+  }
+}

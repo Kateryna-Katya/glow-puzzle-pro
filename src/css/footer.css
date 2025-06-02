@@ -1,0 +1,20 @@
+.footer{
+    background: rgba(215, 0, 254, 0.35);
+}
+.footer-container{
+    padding: 32px;
+}
+.footer-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+}
+@media only screen and (min-width: 1439px) {
+.footer-container{
+    padding: 24px 32px;
+}   
+}

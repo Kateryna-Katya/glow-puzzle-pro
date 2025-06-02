@@ -1,5 +1,73 @@
-<header class="header">
-  <div class="container">
-   
+<header class="header" id="site-header">
+  <div class="header-container container">
+    <a class="header-link" href="index.html#Home">
+            <picture>
+        <source srcset="
+        /img/header/logo-desk.png  1x,
+        /img/header/logo-desk@2x.png 2x
+        " media="(min-width: 1439px)" />
+        <source srcset="
+        /img/header/logo-mob.png 1x,
+        /img/header/logo-mob@2x.png 2x
+         " media="(max-width: 1438px)" />
+        <img class="header-logo" src="/img/header/logo-mob.png" alt="Glow Puzzle Pro" loading="lazy" />
+      </picture>
+      <p class="logo-text">Glow Puzzle Pro</p>
+    </a>
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+         <svg class="header-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 7H21" stroke="#E0FAFE" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M3 12H21" stroke="#E0FAFE" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M3 17H21" stroke="#E0FAFE" stroke-width="1.5" stroke-linecap="round" />  </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Play">How to Play</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Benefits">Benefits</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Levels">Levels</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Modes">Control Modes</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Visuals">Visuals</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Offline">Offline Mode</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#FAQ">FAQ</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Play">How to Play</a></li>
+    <li><a class="menu-list-item" href="index.html#Features">Features</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Benefits">Benefits</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Levels">Levels</a></li>
+    <li><a class="menu-list-item" href="index.html#Modes">Control Modes</a></li>
+    <li><a class="menu-list-item" href="index.html#Visuals">Visuals</a></li>
+    <li><a class="menu-list-item" href="index.html#Offline">Offline Mode</a></li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+    <li><a class="menu-list-item" href="index.html#Contact">Contact</a></li>
+    </ul>
+</div>
